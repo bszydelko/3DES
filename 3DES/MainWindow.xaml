@@ -1,0 +1,23 @@
+﻿<Window x:Class="_3DES.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3DES"
+        mc:Ignorable="d"
+        Title="MainWindow" Width="700" Height="500">
+    <Grid>
+        <TextBox x:Name="TextBoxFirstKey" HorizontalAlignment="Left" Margin="135,134,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="315" Cursor="IBeam" TextChanged="TextBoxFirstKey_TextChanged"/>
+        <TextBox x:Name="TextBoxSecondKey" HorizontalAlignment="Left" Margin="135,169,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="315" Cursor="IBeam" TextChanged="TextBoxSecondKey_TextChanged"/>
+        <TextBox x:Name="TextBoxThirdKey" HorizontalAlignment="Left" Margin="135,204,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="315" Cursor="IBeam" TextChanged="TextBoxThirdKey_TextChanged"/>
+        <Label Content="Pierwszy klucz:" HorizontalAlignment="Left" Margin="40,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="Drugi klucz:" HorizontalAlignment="Left" Margin="40,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Trzeci klucz:" HorizontalAlignment="Left" Margin="40,200,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxInput" HorizontalAlignment="Left" Margin="135,274,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="510"/>
+        <Label Content="Tekst wejściowy:" HorizontalAlignment="Left" Margin="40,270,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BtnEncrypt" Content="Szyfruj" HorizontalAlignment="Left" Margin="212,324,0,0" VerticalAlignment="Top" Height="30" Width="80"/>
+        <Button x:Name="BtnDecrypt" Content="Deszyfruj" HorizontalAlignment="Left" Margin="350,324,0,0" VerticalAlignment="Top" Height="30" Width="80"/>
+        <TextBox x:Name="TextBoxOutput" HorizontalAlignment="Left" Margin="135,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="510"/>
+        <Label Content="Wyjście" HorizontalAlignment="Left" Margin="40,390,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
